@@ -7,6 +7,7 @@
         <title> Chirag Sharma | About Me</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">
         <link rel="stylesheet" href="../public/css/style.css">
     </head>
@@ -29,7 +30,7 @@
                         <a class="nav-link" href="#education">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Skills</a>
@@ -39,7 +40,12 @@
                     </li>
                     <li class="nav-item">
                         <a href="https://linkedin.com/in/chirag-sharma-00" target=_blank>
-                            <img src="https://image.flaticon.com/icons/png/512/37/37019.png" width=16px height=16px alt="LinkedIn icon">
+                            <img src="https://image.flaticon.com/icons/png/512/37/37019.png" width=20px height=20px alt="LinkedIn icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/chirag-sharma-00" target=_blank>
+                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png" width=20px height=20px alt="Github icon">
                         </a>
                     </li>
                     </ul>
@@ -48,41 +54,49 @@
         </nav>
 
         <section class="about">
-            <div class="about-header">CHIRAG SHARMA</div>
-            <div class="container-fluid", style="padding-top: 20px" id="about">
+            <div class="animate__animated animate__slideInDown">
+                <span class="about-header">CHIRAG SHARMA</span>
+            </div>
+            <div class="container-fluid", style="padding-top: 20px">
+                <span id="about" style="position: absolute; top: -20px"></span>
                 <div class="row">
-                    <div class="col-sm-5 my-auto mx-auto" style="border-right: 1px solid">
-                        <img src="../public/img/Chirag-Sharma.jpg" style="width: 80%; border-radius: 50%;" alt="Chirag picture">
+                    <div class="col-sm-5 my-auto mx-auto">
+                        <div class="animate__animated animate__slideInLeft" style="border-right: 1px solid">
+                            <img src="../public/img/Chirag-Sharma.jpg" style="width: 80%; border-radius: 50%;" alt="Chirag picture">
+                        </div>
                     </div>
                     <div class="col-sm-7">
-                        <h1>ABOUT ME</h1>
-                        <p>
-                            I love approaching new areas of knowledge and gaining new perspectives on things I thought I understood well. And
-                            lately, I've found no shortness of opportunity to get exposed to new experiences and to learn by doing. <br><br>
-                            Since starting my college career, I’ve learned so much from my peers, professors, and colleagues, but there's still
-                            a
-                            whole world of new experiences out there that I'm itching to get introduced to. I've enjoyed working on ideas with
-                            others in the past and I'm excited to see what new projects could benefit from my unique skill set. <br><br>
-                            Some tech roles that I've briefly explored in the past or that I find particularly interesting include working on
-                            predictive machine learning projects with large datasets, developing and implementing optimization and approximation
-                            algorithms, and engineering software for large-scale applications. On the academic front, I'm intrigued by the
-                            fields of
-                            quantum computing, cosmology, particle physics, and cryptography. <br><br>
-                            If anything you see here aligns with an area you work on or if you're looking for someone who's eager to learn and
-                            gain
-                            new skills on the job, I’d love to chat with you about how we might work together on something.
-                        </p>
+                        <div class="animate__animated animate__slideInRight">
+                            <h1>ABOUT ME</h1>
+                            <p>
+                                I love approaching new areas of knowledge and gaining new perspectives on things I thought I understood well. And
+                                lately, I've found no shortness of opportunity to get exposed to new experiences and to learn by doing. <br><br>
+                                Since starting my college career, I’ve learned so much from my peers, professors, and colleagues, but there's still
+                                a
+                                whole world of new experiences out there that I'm itching to get introduced to. I've enjoyed working on ideas with
+                                others in the past and I'm excited to see what new projects could benefit from my unique skill set. <br><br>
+                                Some tech roles that I've briefly explored in the past or that I find particularly interesting include working on
+                                predictive machine learning projects with large datasets, developing and implementing optimization and approximation
+                                algorithms, and engineering software for large-scale applications. On the academic front, I'm intrigued by the
+                                fields of
+                                quantum computing, cosmology, particle physics, and cryptography. <br><br>
+                                If anything you see here aligns with an area you work on or if you're looking for someone who's eager to learn and
+                                gain
+                                new skills on the job, I’d love to chat with you about how we might work together on something.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="education" id="education">
+        <section class="education">
+            <span id="education", style="position: absolute; top: -120px"></span>
             <h1>EDUCATION</h1>
             <div class="container-fluid", style="padding-top: 20px">
                 <div class="row">
                     <div class="col-sm-2">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Seal_of_University_of_California%2C_Berkeley.svg" width=80% alt="Seal_of_University_of_California%2C_Berkeley">
+                        <img class="education-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Seal_of_University_of_California%2C_Berkeley.svg" alt="Seal_of_University_of_California%2C_Berkeley">
                     </div>
                     <div class="col-sm-2", style="font-size: 24px;">
                         UNIVERSITY OF CALIFORNIA, <br> BERKELEY
@@ -115,9 +129,148 @@
             </div>
         </section>
 
-        <script>
-            ScrollReveal().reveal('.headline');
-        </script>
+        <section class="experience" id="experience">
+            <h1>EXPERIENCE</h1>
+            <div class="container-fluid", style="padding-top: 20px; position: relative">
+                <div class="row" style="padding-bottom: 50px">
+                    <div class="col-sm-2">
+                        <img class="experience-img" src="../public/img/microsoft.png">
+                    </div>
+                    <div class="col-sm-4">
+                        SOFTWARE ENGINEER INTERN, <br> MICROSOFT
+                        <br><br>
+                        May 2020 - August 2020
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                Intern on the Bing Geocoding team in the Maps & Geospatial division.
+                            </li>
+                            <li>
+                                Working on a machine learning project to train and deploy a tile ranker for address identification of queries in the
+                                Indian market.
+                            </li>
+                            <li>
+                                Designing and creating experiment sets using data scrapes and investigating the effects of incorporating other
+                                classification/learning features.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="padding-bottom: 50px;">
+                    <div class="col-sm-2">
+                        <img class="experience-img" src="../public/img/rendeznous.png" style="background-color: #7de1c4;">
+                    </div>
+                    <div class="col-sm-4">
+                        COFOUNDER AND ENGINEER, <br> RENDEZNOUS
+                        <br><br>
+                        Sep 2019 - May 2020
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                Rendeznous is an app-based edtech startup aimed at helping students easily connect with study resources on college
+                                campuses.
+                            </li>
+                            <li>
+                                Advanced build team in UC Berkeley Convergent's startup incubator program.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="padding-bottom: 50px;">
+                    <div class="col-sm-2">
+                        <img class="experience-img" src="../public/img/eecs.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        ACADEMIC INTERN, <br> UC BERKELEY EECS
+                        <br><br>
+                        Jan 2020 - May 2020
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                Academic course staff intern for CS 61B, an undergraduate data structures class at UC Berkeley.
+                            </li>
+                            <li>
+                                Working alongside instructors to answer students’ questions in Office Hours.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="padding-bottom: 50px;">
+                    <div class="col-sm-2">
+                        <img class="experience-img" src="../public/img/emtranslate.png">
+                    </div>
+                    <div class="col-sm-4">
+                        COFOUNDER AND ENGINEER, <br> EMTRANSLATE
+                        <br><br>
+                        Jul 2019 - May 2020
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                EMTranslate is an app-based medtech startup aimed at helping first responders quickly and effectively communicate with low English
+                                proficiency patients.
+                            </li>
+                            <li>
+                                Only undergrad finalists of the Fall 2019 cohort of Berkeley StEP, an 8-week pre-accelerator program.
+                            </li>
+                            <li>
+                                Spring 2020 SkyDeck Hot Desk program start-up.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="padding-bottom: 50px;">
+                    <div class="col-sm-2">
+                        <img class="experience-img" src="../public/img/cuore.png">
+                    </div>
+                    <div class="col-sm-4">
+                        RESEARCHER, <br> WEAK INTERACTIONS GROUP
+                        <br><br>
+                        Dec 2018 - Present
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                Conducting research into sensor technologies as part of the CUORE collaboration searching for neutrinoless double-beta
+                                decay.
+                            </li>
+                            <li>
+                                Worked on an independent project to build data acquisition, signal processing, and analysis software and construct a
+                                hardware setup for a CryoPMT detector.
+                            </li>
+                            <li>
+                                Modeled the IV relationship for TES sensors in the normal and superconducting phases under various bias conditions.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="padding-bottom: 50px;">
+                    <div class="col-sm-2">
+                        <img class="experience-img" src="../public/img/ulab.png">
+                    </div>
+                    <div class="col-sm-4">
+                        RESEARCHER, <br> ULAB @ BERKELEY
+                        <br><br>
+                        Sep 2018 - May 2019
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                Designed and directed a particle physics project from the ground-up in a team as a member of the particle physics group
+                                of ULAB @ Berkeley, an undergraduate-run research organization.
+                            </li>
+                            <li>
+                                Constructed and built CosmicWatch scintillation muon detectors to characterize the terrestrial incidence of cosmic ray
+                                muons based on angular and altitude dependence of flux.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>  
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

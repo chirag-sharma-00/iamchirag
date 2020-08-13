@@ -4,12 +4,22 @@
   "description": "iamchirag.com website package.json",
   "main": "index.js",
   "dependencies": {
+    "animate.css": "^4.1.0",
     "animejs": "^3.2.0",
-    "scrollreveal": "^4.0.7"
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "scrollreveal": "^4.0.7",
+    "waypoints": "^4.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chirag-sharma-00/iamchirag"
   },
   "author": "Chirag Sharma",
   "license": "ISC"
