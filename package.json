@@ -1,0 +1,16 @@
+{
+  "name": "iamchirag",
+  "version": "1.0.0",
+  "description": "iamchirag.com website package.json",
+  "main": "index.js",
+  "dependencies": {
+    "animejs": "^3.2.0",
+    "scrollreveal": "^4.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chirag Sharma",
+  "license": "ISC"
+}
