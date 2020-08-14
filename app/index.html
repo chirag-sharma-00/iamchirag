@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Chirag Sharma | About Me</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -21,36 +21,43 @@
                 <a class="navbar-brand" style="font-size: 24px">
                     CHIRAG SHARMA
                 </a>
-                <div class="collapse navbar-collapse"">
-                                <ul class=" navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://linkedin.com/in/chirag-sharma-00" target=_blank>
-                            <img src="https://image.flaticon.com/icons/png/512/37/37019.png" width=20px height=20px alt="LinkedIn icon">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://github.com/chirag-sharma-00" target=_blank>
-                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png" width=20px height=20px alt="Github icon">
-                        </a>
-                    </li>
+                <button class="navbar-toggler toggle-button" type="button" data-toggle="collapse"
+                    data-target="#navbar-items" aria-controls="navbarSupportedContent23" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="animated-icon">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class=" navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://linkedin.com/in/chirag-sharma-00" target=_blank>
+                                <img src="https://image.flaticon.com/icons/png/512/37/37019.png" width=20px height=20px alt="LinkedIn icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/chirag-sharma-00" target=_blank>
+                                <img src="https://image.flaticon.com/icons/png/512/25/25231.png" width=20px height=20px alt="Github icon">
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -60,12 +67,12 @@
             <div class="animate__animated animate__slideInDown">
                 <span class="about-header">CHIRAG SHARMA</span>
             </div>
-            <div class="container-fluid", style="padding-top: 20px">
+            <div class="container", style="padding-top: 20px">
                 <span id="about" style="position: absolute; top: 120px"></span>
                 <div class="row">
                     <div class="col-sm-5 my-auto mx-auto">
-                        <div class="animate__animated animate__slideInLeft" style="border-right: 1px solid">
-                            <img src="../public/img/Chirag-Sharma.jpg" style="width: 80%; border-radius: 50%;" alt="Chirag picture">
+                        <div class="animate__animated animate__slideInLeft">
+                            <img class="about-img" src="../public/img/Chirag-Sharma.jpg" alt="Chirag picture">
                         </div>
                     </div>
                     <div class="col-sm-7">
@@ -96,13 +103,13 @@
         <section class="education">
             <span id="education", style="position: absolute; top: -120px"></span>
             <h1>EDUCATION</h1>
-            <div class="container-fluid", style="padding-top: 20px">
+            <div class="container", style="padding-top: 20px">
                 <div class="row">
                     <div class="col-sm-2">
                         <img class="education-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Seal_of_University_of_California%2C_Berkeley.svg" alt="Seal_of_University_of_California%2C_Berkeley">
                     </div>
-                    <div class="col-sm-2", style="font-size: 24px;">
-                        UNIVERSITY OF CALIFORNIA, <br> BERKELEY
+                    <div class="col-sm-2"">
+                        <span class="university">UNIVERSITY OF CALIFORNIA, <br> BERKELEY</span>
                     </div>
                     <div class="col-sm-3">
                         August 2018 - May 2022
@@ -110,23 +117,25 @@
                     <div class="col-sm-5">
                         Bachelor's in Physics and Computer Science
                         <br><br>
-                        <bold-subheader>GPA:</bold-subheader> 3.98/4.00
-                        <br><br>
-                        <bold-subheader>Organizations:</bold-subheader>
-                        <ul class=>
-                            <li>
-                                Sigma Eta Pi <br>
-                                <i>Co-ed entrepreneurship fraternity</i>
-                            </li>
-                            <li>
-                                Upsilon Pi Epsilon <br>
-                                <i>Computer Science honor society</i>
-                            </li>
-                            <li>
-                                Weak Interactions Group <br>
-                                <i>Experimental particle physics research group</i>
-                            </li>
-                        </ul>
+                        <div class="education-body">
+                            <bold-subheader>GPA:</bold-subheader> 3.98/4.00
+                            <br><br>
+                            <bold-subheader>Organizations:</bold-subheader>
+                            <ul class=>
+                                <li>
+                                    Sigma Eta Pi <br>
+                                    <i>Co-ed entrepreneurship fraternity</i>
+                                </li>
+                                <li>
+                                    Upsilon Pi Epsilon <br>
+                                    <i>Computer Science honor society</i>
+                                </li>
+                                <li>
+                                    Weak Interactions Group <br>
+                                    <i>Experimental particle physics research group</i>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -135,7 +144,7 @@
         <section class="experience">
             <span id="experience" style="position: absolute; top: -50px"></span>
             <h1>EXPERIENCE</h1>
-            <div class="container-fluid", style="padding-top: 20px; position: relative">
+            <div class="container", style="padding-top: 20px; position: relative">
                 <div class="row" style="padding-bottom: 50px">
                     <div class="col-sm-2">
                         <img class="experience-img" src="../public/img/microsoft.png">
@@ -144,6 +153,7 @@
                         SOFTWARE ENGINEER INTERN, <br> MICROSOFT
                         <br><br>
                         May 2020 - August 2020
+                        <br><br>
                     </div>
                     <div class="col-sm-6">
                         <ul>
@@ -166,12 +176,14 @@
                 </div>
                 <div class="row" style="padding-bottom: 50px;">
                     <div class="col-sm-2">
-                        <img class="experience-img" src="../public/img/rendeznous.png" style="background-color: #7de1c4;">
+                        <img class="experience-img" src="../public/img/rendeznous.png" style="padding-bottom: 0px; background-color: #7de1c4">
+                        <br>
                     </div>
                     <div class="col-sm-4">
                         COFOUNDER AND ENGINEER, <br> RENDEZNOUS
                         <br><br>
                         Sep 2019 - May 2020
+                        <br><br>
                     </div>
                     <div class="col-sm-6">
                         <ul>
@@ -193,6 +205,7 @@
                         ACADEMIC INTERN, <br> UC BERKELEY EECS
                         <br><br>
                         Jan 2020 - May 2020
+                        <br><br>
                     </div>
                     <div class="col-sm-6">
                         <ul>
@@ -213,6 +226,7 @@
                         COFOUNDER AND ENGINEER, <br> EMTRANSLATE
                         <br><br>
                         Jul 2019 - May 2020
+                        <br><br>
                     </div>
                     <div class="col-sm-6">
                         <ul>
@@ -237,6 +251,7 @@
                         RESEARCHER, <br> WEAK INTERACTIONS GROUP
                         <br><br>
                         Dec 2018 - Present
+                        <br><br>
                     </div>
                     <div class="col-sm-6">
                         <ul>
@@ -262,6 +277,7 @@
                         RESEARCHER, <br> ULAB @ BERKELEY
                         <br><br>
                         Sep 2018 - May 2019
+                        <br><br>
                     </div>
                     <div class="col-sm-6">
                         <ul>
@@ -282,7 +298,7 @@
         <section class="skills">
             <span id="skills" style="position: absolute; top: -40px"></span>
             <h1>SKILLS</h1>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
                         <h2>Proficient</h2>
@@ -331,7 +347,7 @@
         <section class="contact">
             <span id="contact" style="position: absolute; bottom: 0px"></span>           
             <h1>CONTACT ME</h1>
-            <div class="col-md-12 text-center">
+            <div class="col-sm-12 text-center">
                 <ul class="list-unstyled mb-0">
                     <li><i class="fa fa-map-marker mt-4 fa-2x"></i>
                         <p>

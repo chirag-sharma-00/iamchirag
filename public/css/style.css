@@ -40,6 +40,41 @@ footer {
     margin-left: 20px;
 }
 
+.navbar button {
+  border: none;
+  outline: none;
+}
+
+.animated-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+}
+
+.animated-icon span {
+  background: #000000;
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+}
+
+.animated-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon span:nth-child(2), .animated-icon span:nth-child(3) {
+  top: 10px;
+}
+
+.animated-icon span:nth-child(4) {
+  top: 20px;
+}
+
 section {
   padding: 0px 50px 0px 50px;
   margin: auto;
@@ -61,7 +96,7 @@ section h2 {
 }
 
 .about {
-    padding: 50px 50px 20px 0px;
+    padding: 50px 0px 20px 0px;
 }
 
 .about::after{
@@ -76,6 +111,14 @@ section h2 {
 .about-header {
     font-size: 60px;
     padding: 0px 0px 20px 0px;
+}
+
+.about-img {
+    width: 80%;
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-header .letter {
@@ -93,7 +136,7 @@ section h2 {
 }
 
 .education {
-    padding: 20px 40px 0px 60px;
+    padding: 20px 0px 0px 0px;
     text-align: left;
 }
 
@@ -101,8 +144,16 @@ section h2 {
     width: 60%;
     display: block;
     top: 0px;
-    margin-left: 30px;
+    margin-left: auto;
     margin-right: auto;
+}
+
+.university {
+    font-size: 24px;
+}
+
+.education-body {
+    text-align: left;
 }
 
 .education::after{
@@ -127,7 +178,7 @@ li {
 }
 
 .experience {
-    padding: 20px 40px 0px 60px;
+    padding: 20px 0px 0px 0px;
     text-align: left;
 }
 
@@ -135,6 +186,7 @@ li {
     width: 50%;
     display: block;
     top: 0px;
+    padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -148,7 +200,7 @@ li {
 }
 
 .skills {
-    padding: 20px 40px 0px 60px;
+    padding: 20px 0px 0px 0px;
     text-align: center;
 }
 
@@ -166,7 +218,7 @@ li {
 }
 
 .contact {
-    padding: 20px 40px 0px 60px;
+    padding: 20px 0px 0px 0px;
     text-align: center;
 }
 
@@ -187,4 +239,89 @@ canvas {
     z-index: -50;
     top: 0;
     left: 0
+}
+
+@media (min-width: 0px) {
+    .container{
+        max-width: 95%;
+    };
+}
+
+@media (min-width: 0px) {
+    body {
+        font-size: 16px
+    }
+
+    section h1 {
+        font-size: 32px
+    }
+
+    section h2 {
+        font-size: 24px
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 2px
+    }
+
+    .about-header {
+        font-size: 48px
+    }
+
+    .education {
+        text-align: center
+    }
+
+    .university {
+        font-size: 20px
+    }
+
+    .education-body {
+        text-align: left;
+        padding-left: 20px
+    }
+
+    .experience .container .row .col-sm-4 {
+        text-align: center
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 20px
+    }
+
+    section h1 {
+        font-size: 40px
+    }
+
+    section h2 {
+        font-size: 30px
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 10px
+    }
+
+    .about-header {
+        font-size: 60px
+    }
+
+    .education {
+        text-align: left
+    }
+
+    .university {
+        font-size: 24px
+    }
+
+    .education-body {
+        padding-left: 0px
+    }
+
+    .experience .container .row .col-sm-4 {
+        text-align: left
+    }
 }
