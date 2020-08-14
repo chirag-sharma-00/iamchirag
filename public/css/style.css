@@ -53,6 +53,13 @@ section h1 {
     text-align: center;
 }
 
+section h2 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+
 .about {
     padding: 50px 50px 20px 0px;
 }
@@ -138,4 +145,29 @@ li {
     margin: 0 auto;
     width: 80%;
     border-bottom: 1px solid;
+}
+
+.skills {
+    padding: 20px 40px 0px 60px;
+    text-align: left;
+}
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.2;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -50;
+    top: 0;
+    left: 0
 }
