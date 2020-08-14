@@ -170,7 +170,7 @@ li {
     text-align: center;
 }
 
-#particles-js canvas {
+canvas {
     display: block;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
