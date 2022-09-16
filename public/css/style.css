@@ -7,9 +7,10 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   background-color: white;
   padding-top: 50px;
+  padding-right: 0px;
 }
 
 nav {
@@ -110,7 +111,7 @@ section h2 {
 
 .about-header {
     font-size: 60px;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 20px;
 }
 
 .about-img {
